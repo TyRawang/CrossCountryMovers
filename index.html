@@ -77,7 +77,60 @@
     </div>
   </header>
   <body>
+    <main class="homepage-hero">
+      <div class="glider-contain">
+        <div class="glider">
+          <div class="glider-item">
+            <img src="/assets/images/road-845x321.jpg" alt="" />
+            <div class="container">
+              <div class="glider-item__info">
+                <h1>UNBEATABLE TRUCKING AND TRANSPORT SERVICES</h1>
+                <p>
+                  Starting from loading to unloading and maintaining the highest
+                  standards in terms of safety while in transit, we take nothing
+                  to chance.
+                </p>
+                <a href="#" class="btn-primary">Get in touch</a>
+              </div>
+            </div>
+          </div>
+          <div class="glider-item">
+            <img src="/assets/images/road_and_railtransport.jpg" alt="" />
+            <div class="container">
+              <div class="glider-item__info">
+                <h1>CRANE TO TRAIN, WE DO EVERYTHING</h1>
+                <p>
+                  Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance.
+                </p>
+                <a href="#" class="btn-primary">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button aria-label="Previous" class="glider-prev">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
     <script src="/js/glider.js"></script>
+    <script>
+      new Glider(document.querySelector(".glider"), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: ".dots",
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next",
+        },
+      });
+    </script>
     <script src="/js/index.js"></script>
   </body>
 </html>
