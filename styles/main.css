@@ -386,27 +386,41 @@ button:focus, button:active {
 
 .homepage-hero .glider-contain .buttons {
   position: absolute;
-  top: 1rem;
-  width: 80%;
+  top: 0rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  z-index: 2;
+  width: 80%;
   height: 4rem;
 }
 
-.homepage-hero .glider-contain .buttons button i {
-  color: white;
-  font-size: 2rem;
+.homepage-hero .glider-contain .buttons .container {
+  height: inherit;
+  position: relative;
+}
+
+.homepage-hero .glider-contain .buttons .container .btn-wraper {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage-hero .glider-contain .buttons .container .btn-wraper button {
+  width: 60px;
+  height: 60px;
+  border-radius: 2px;
+  background-color: rgba(250, 250, 250, 0.35);
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.35);
 }
 
 @media (min-width: 1024px) {
@@ -553,7 +567,7 @@ button:focus, button:active {
     width: 100%;
   }
   .homepage-hero .glider-contain {
-    height: 100vh;
+    height: 60vh;
   }
   .homepage-hero .glider-contain .glider .glider-item .container .glider-item__info {
     max-width: 700px;
@@ -569,25 +583,39 @@ button:focus, button:active {
   }
   .homepage-hero .glider-contain .buttons {
     position: absolute;
-    top: 50%;
-    width: 90%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    z-index: 4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    top: 2rem;
+    left: 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    z-index: 2;
+    width: 100%;
     height: 4rem;
   }
-  .homepage-hero .glider-contain .buttons button i {
-    color: white;
-    font-size: 2rem;
+  .homepage-hero .glider-contain .buttons .container {
+    height: inherit;
+    position: relative;
+  }
+  .homepage-hero .glider-contain .buttons .container .btn-wraper {
+    width: 300px;
+    height: 100%;
+    display: block;
+  }
+  .homepage-hero .glider-contain .buttons .container .btn-wraper .glider-next,
+  .homepage-hero .glider-contain .buttons .container .btn-wraper .glider-prev {
+    position: relative;
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
+  .homepage-hero .glider-contain .buttons .container .btn-wraper button {
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: rgba(250, 250, 250, 0.35);
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.35);
+  }
+  .homepage-hero .glider-contain .buttons .container .btn-wraper .glider-next {
+    left: 8px;
   }
 }
