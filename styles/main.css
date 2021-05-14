@@ -120,6 +120,7 @@ button:focus, button:active {
   color: #474747;
   font-weight: 700;
   margin: 0.5rem 0;
+  font-size: 1rem;
 }
 
 .navbar .nav-info .mobile-menu {
