@@ -6,10 +6,6 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-body {
-  padding-bottom: 5rem;
-}
-
 .container {
   width: 100%;
   max-width: 1536px;
@@ -1006,6 +1002,77 @@ button:focus, button:active {
   color: #aaaaaa;
 }
 
+.footer {
+  background-color: #1f425d;
+  padding: 3rem 0;
+  color: white;
+  line-height: 1.5;
+}
+
+.footer .footer-list-items .footer-list-item {
+  margin-bottom: 1rem;
+}
+
+.footer .footer-list-items .footer-list-item .footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer .footer-list-items .footer-list-item p {
+  font-size: 1rem;
+  color: #9eb7cb;
+}
+
+.footer .footer-list-items .footer-list-item .footer-list-item__headings {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer .footer-list-items .footer-list-item .footer-list-item__links {
+  color: #9eb7cb;
+}
+
+.footer .footer-list-items .footer-list-item .footer-list-item__links .footer-list-item__link {
+  padding: 1rem 0;
+}
+
+.footer .footer-list-items .footer-list-item .social {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-list-items .footer-list-item .social li {
+  margin-right: 0.5rem;
+  background-color: #305a79;
+  border-radius: 2px;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-list-items .footer-list-item .social li a {
+  display: block;
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0;
+  color: #9eb7cb;
+}
+
+.footer .footer-list-items .footer-list-item .social li a i {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 1024px) {
   .section__title span {
     width: 70%;
@@ -1452,5 +1519,24 @@ button:focus, button:active {
   }
   .homepage-statistics .statistics-list-items .statistics-list-item p {
     color: #aaaaaa;
+  }
+  .footer {
+    background-color: #1f425d;
+    padding: 4rem 0;
+  }
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer-list-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 20% 20%;
+        grid-template-columns: auto 20% 20%;
+    gap: 2rem;
   }
 }
