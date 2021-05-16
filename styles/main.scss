@@ -526,7 +526,7 @@ button {
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
       }
-      p{
+      p {
         color: #aaaaaa;
       }
     }
@@ -536,6 +536,42 @@ button {
       color: $primaryColor;
       font-weight: 700;
       text-transform: uppercase;
+    }
+  }
+}
+.our-values {
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+  // background-image: url("/assets/images/pexels-alexander-isreb-1797428.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255,0.95) 100%),
+  url("/assets/images/pexels-alexander-isreb-1797428.jpg") 50% no-repeat;
+  background-size: cover;
+  .our-values__wraper {
+    text-align: center;
+    h3 {
+      font-size: 2.75rem;
+      color: #444444;
+    }
+    p {
+      color: #aaaaaa;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+    .by {
+      color: $primaryColor;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .divider {
+      margin-top: 22px;
+      margin-bottom: 22px;
+      border: 0;
+      border-top: 1px solid #eee;
+    }
+    img {
+      margin: 2rem 0;
     }
   }
 }
@@ -738,6 +774,8 @@ button {
     }
   }
   .our-services {
+    padding: 4rem 0;
+    margin-bottom: 4rem;
     .container {
       .our-services__cards {
         grid-template-columns: repeat(3, 1fr);
@@ -745,9 +783,9 @@ button {
     }
   }
   .news {
-    padding: 2rem 0;
+    padding: 5rem 0;
     margin-top: 4rem;
-    .container{
+    .container {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -823,7 +861,7 @@ button {
       }
     }
     .news-list-items {
-      margin:  0;
+      margin: 0;
       width: 32%;
       a {
         display: block;
@@ -846,6 +884,13 @@ button {
         font-weight: 700;
         text-transform: uppercase;
       }
+    }
+  }
+  .our-values {
+    padding: 5rem 0;
+    .our-values__wraper {
+      max-width: 700px;
+      margin: 0 auto;
     }
   }
 }

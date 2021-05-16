@@ -708,6 +708,48 @@ button:focus, button:active {
   text-transform: uppercase;
 }
 
+.our-values {
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.95)), to(rgba(255, 255, 255, 0.95))), url("/assets/images/pexels-alexander-isreb-1797428.jpg") 50% no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 100%), url("/assets/images/pexels-alexander-isreb-1797428.jpg") 50% no-repeat;
+  background-size: cover;
+}
+
+.our-values .our-values__wraper {
+  text-align: center;
+}
+
+.our-values .our-values__wraper h3 {
+  font-size: 2.75rem;
+  color: #444444;
+}
+
+.our-values .our-values__wraper p {
+  color: #aaaaaa;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.our-values .our-values__wraper .by {
+  color: #4ab9cf;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.our-values .our-values__wraper .divider {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.our-values .our-values__wraper img {
+  margin: 2rem 0;
+}
+
 @media (min-width: 1024px) {
   .section__title span {
     width: 70%;
@@ -927,12 +969,16 @@ button:focus, button:active {
   .services-cards .no-image .services-cards__item-cta {
     padding: 1.5rem 1.5rem 0 1.5rem;
   }
+  .our-services {
+    padding: 4rem 0;
+    margin-bottom: 4rem;
+  }
   .our-services .container .our-services__cards {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
   .news {
-    padding: 2rem 0;
+    padding: 5rem 0;
     margin-top: 4rem;
   }
   .news .container {
@@ -1054,5 +1100,12 @@ button:focus, button:active {
     color: #4ab9cf;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  .our-values {
+    padding: 5rem 0;
+  }
+  .our-values .our-values__wraper {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
