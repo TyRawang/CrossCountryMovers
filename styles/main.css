@@ -506,16 +506,23 @@ button:focus, button:active {
   color: #272626;
   letter-spacing: -0.05em;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__title h3 {
+  margin-right: 1rem;
 }
 
 .section__title span {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.065);
-  width: 20%;
-  right: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .icon-box {
@@ -602,6 +609,23 @@ button:focus, button:active {
   text-transform: uppercase;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+}
+
+.divider {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.read-more {
+  color: #4ab9cf;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.read-more i {
+  margin-left: 0.5rem;
 }
 
 .our-services .container .our-services__cards {
@@ -774,13 +798,6 @@ button:focus, button:active {
   margin-bottom: 1rem;
 }
 
-.our-values .our-values__wraper .divider {
-  margin-top: 22px;
-  margin-bottom: 22px;
-  border: 0;
-  border-top: 1px solid #eee;
-}
-
 .our-values .our-values__wraper img {
   margin: 2rem 0;
 }
@@ -790,16 +807,6 @@ button:focus, button:active {
   color: #aaaaaa;
   line-height: 1.5;
   margin-bottom: 1rem;
-}
-
-.homepage-about-us .home-page-about-us__text .read-more {
-  color: #4ab9cf;
-  font-weight: 700;
-  padding: 1rem 0;
-}
-
-.homepage-about-us .home-page-about-us__text .read-more i {
-  margin-left: 0.5rem;
 }
 
 .homepage-about-us .homepage-about-us__contact {
@@ -825,6 +832,30 @@ button:focus, button:active {
   font-size: 1rem;
   line-height: 1.5;
   color: #aaaaaa;
+}
+
+.homepage-gallery-faq .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.homepage-gallery-faq .container .homepage-gallery .gallery-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
+}
+
+.homepage-gallery-faq .container .homepage-gallery .gallery-images img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -1214,5 +1245,20 @@ button:focus, button:active {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+  .homepage-gallery-faq .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .homepage-gallery-faq .container .homepage-gallery .gallery-images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 100px 100px;
+        grid-template-rows: 100px 100px;
   }
 }
