@@ -938,6 +938,7 @@ button:focus, button:active {
 
 .homepage-partners {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .homepage-partners .partners-list {
@@ -964,6 +965,45 @@ button:focus, button:active {
 .homepage-partners .partners-list li:hover {
   border-bottom: 2px solid #4ab9cf;
   opacity: 1;
+}
+
+.homepage-statistics {
+  padding: 3rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.949)), to(rgba(240, 240, 240, 0.949))), url("/assets/images/statistics-bg.jpg") 50% no-repeat;
+  background: linear-gradient(rgba(240, 240, 240, 0.949), rgba(240, 240, 240, 0.949) 100%), url("/assets/images/statistics-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.homepage-statistics .statistics-list-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.homepage-statistics .statistics-list-items .statistics-list-item {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.homepage-statistics .statistics-list-items .statistics-list-item .statistics-list-item__top {
+  font-size: 44px;
+  line-height: 70px;
+  font-weight: 900;
+  color: #444;
+}
+
+.homepage-statistics .statistics-list-items .statistics-list-item .statistics-list-item__top i {
+  color: #e21f2f;
+}
+
+.homepage-statistics .statistics-list-items .statistics-list-item p {
+  color: #aaaaaa;
 }
 
 @media (min-width: 1024px) {
@@ -1375,5 +1415,42 @@ button:focus, button:active {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
+  }
+  .homepage-statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage-statistics .statistics-list-items {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage-statistics .statistics-list-items .statistics-list-item {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 0;
+    border-left: 1px dashed rgba(0, 0, 0, 0.2);
+  }
+  .homepage-statistics .statistics-list-items .statistics-list-item .statistics-list-item__top {
+    font-size: 44px;
+    line-height: 70px;
+    font-weight: 900;
+    color: #444;
+  }
+  .homepage-statistics .statistics-list-items .statistics-list-item .statistics-list-item__top i {
+    color: #e21f2f;
+  }
+  .homepage-statistics .statistics-list-items .statistics-list-item p {
+    color: #aaaaaa;
   }
 }
