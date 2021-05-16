@@ -428,6 +428,38 @@ button {
     text-align: center;
   }
 }
+.contact-us__form {
+  input,
+  select,
+  textarea {
+    color: #444444;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    font-size: 0.8rem;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    transition: all 100ms ease-out;
+    &:focus {
+      outline: 0;
+      outline-color: $primaryColor;
+    }
+  }
+  .contact-us__form-submit {
+    button {
+      color: white;
+      font-weight: 700;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 30px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      transition: all 100ms ease-out;
+    }
+  }
+}
 .our-services {
   .container {
     .our-services__cards {
@@ -543,8 +575,11 @@ button {
   padding: 3rem 0;
   margin-bottom: 4rem;
   // background-image: url("/assets/images/pexels-alexander-isreb-1797428.jpg");
-  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255,0.95) 100%),
-  url("/assets/images/pexels-alexander-isreb-1797428.jpg") 50% no-repeat;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    url("/assets/images/pexels-alexander-isreb-1797428.jpg") 50% no-repeat;
   background-size: cover;
   .our-values__wraper {
     text-align: center;
@@ -575,11 +610,64 @@ button {
     }
   }
 }
+.homepage-about-us {
+  .home-page-about-us__text {
+    p {
+      font-size: 1rem;
+      color: #aaaaaa;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .read-more {
+      color: $primaryColor;
+      font-weight: 700;
+      padding: 1rem 0;
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .homepage-about-us__contact {
+    padding: 3rem 0;
+    .contact-us__form-wraper {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 2rem;
+
+      .contact-us__form-title {
+        font-size: 1.5rem;
+        color: #444444;
+        font-weight: 900;
+        letter-spacing: -0.05em;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #aaaaaa;
+      }
+    }
+  }
+}
 
 @media (min-width: 1024px) {
   .section__title {
     span {
       width: 70%;
+    }
+  }
+  .contact-us__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .contact-us__form-left-items,
+    .contact-us__form-right-items {
+      width: 48%;
+    }
+    .contact-us__form-submit {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
     }
   }
   //nav barstart hete
@@ -891,6 +979,13 @@ button {
     .our-values__wraper {
       max-width: 700px;
       margin: 0 auto;
+    }
+  }
+  .homepage-about-us {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
     }
   }
 }
