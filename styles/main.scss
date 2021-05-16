@@ -372,7 +372,7 @@ button {
 }
 .section__title {
   padding: 2rem 0;
-  font-size: 2.75rem;
+  font-size: 27px;
   font-weight: 900;
   color: #272626;
   letter-spacing: -0.05em;
@@ -385,6 +385,21 @@ button {
   span {
     border-bottom: 1px solid rgba(0, 0, 0, 0.065);
     flex: 1;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    button {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      color: #aaa;
+      margin-left: 10px;
+      transition: all 100ms ease-out;
+      &:last-child {
+        margin-left: 1rem;
+      }
+    }
   }
 }
 .icon-box {
@@ -652,6 +667,7 @@ button {
   }
 }
 .homepage-gallery-faq {
+  margin-bottom: 4rem;
   .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -667,6 +683,71 @@ button {
           object-fit: cover;
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+.homepage-testimonials {
+  overflow: hidden;
+  background-color: #eeeeee;
+  padding: 3rem 0;
+  .container {
+    .glider-contain {
+      .glider {
+        .glider-item-testimonials {
+          margin-right: 1rem;
+          color: #aaaaaa;
+          .testimonials-box {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 2rem 2rem 2rem 0;
+            margin-bottom: 1rem;
+            p {
+              line-height: 1.5;
+            }
+            i {
+              background-color: $primaryColor;
+              padding: 1rem;
+              margin-right: 1rem;
+              color: white;
+              height: 100px;
+            }
+          }
+          .testimonials-person {
+            padding: 1rem 0;
+            strong {
+              color: black;
+            }
+            span {
+              font-style: italic;
+            }
+          }
+        }
+      }
+      .glider::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+    }
+  }
+}
+.homepage-partners {
+  margin-top: 3rem;
+  .partners-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    li {
+      margin: 15px 0;
+      border: 1px solid #e6e6e6;
+      border-bottom: 2px solid #b9babc;
+      border-radius: 2px;
+      transition: all 100ms ease-out;
+      opacity: 0.6;
+      &:hover {
+        border-bottom: 2px solid $primaryColor;
+        opacity: 1;
       }
     }
   }
@@ -1022,6 +1103,13 @@ button {
           grid-template-rows: 100px 100px;
         }
       }
+    }
+  }
+  .homepage-partners {
+    .partners-list {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+     
     }
   }
 }
