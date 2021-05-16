@@ -826,8 +826,9 @@ button {
       top: 0px;
       right: 0;
       width: 100%;
-      font-weight: 500;
-      font-size: 18px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.5;
       padding-top: 0px;
       color: white;
       transform: translateX(0);
@@ -1065,7 +1066,8 @@ button {
         letter-spacing: -0.05em;
         h1 {
           margin-bottom: 0.5rem;
-          font-size: 1.5rem;
+          font-size: 1rem;
+          font-weight: 900;
         }
       }
       .more-news {
