@@ -1034,7 +1034,7 @@ button {
         position: absolute;
         top: 0;
         left: 0;
-        width: 500px;
+        width: 200px;
         height: 30px;
         background-color: white;
         z-index: 9999999;
@@ -1043,7 +1043,7 @@ button {
         content: "";
         position: absolute;
         top: -3px;
-        left: 460px;
+        left: 160px;
         width: 30px;
         height: 50px;
         background-color: #1f425d;
@@ -1396,7 +1396,7 @@ button {
         img {
           height: 300px;
           width: 100%;
-          object-fit:cover;
+          object-fit: cover;
           margin-bottom: 1rem;
         }
         h1,
@@ -1430,6 +1430,63 @@ button {
       display: grid;
       grid-template-columns: auto 20% 20%;
       gap: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    .main-nav {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 30px;
+        background-color: white;
+        z-index: 9999999;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 360px;
+        width: 30px;
+        height: 50px;
+        background-color: #1f425d;
+        z-index: 9999999;
+        transform-origin: bottom;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+@media (min-width: 1536px) {
+  .navbar {
+    .main-nav {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 30px;
+        background-color: white;
+        z-index: 9999999;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 460px;
+        width: 30px;
+        height: 50px;
+        background-color: #1f425d;
+        z-index: 9999999;
+        transform-origin: bottom;
+        transform: rotate(45deg);
+      }
     }
   }
 }
