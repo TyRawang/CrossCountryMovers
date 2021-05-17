@@ -962,15 +962,13 @@ button {
             background-color: #e0e0e0;
             margin: 0 0.5rem;
           }
-          
         }
-        .active{
-          span{
+        .active {
+          span {
             font-weight: 900;
             color: #444;
           }
         }
-        
       }
     }
     .contact-us__right {
@@ -988,6 +986,54 @@ button {
           color: #aaa;
           font-size: 14px;
         }
+      }
+    }
+  }
+}
+// services pages
+.services-page {
+  padding: 3rem 0;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    .services-page__sidebar {
+      order: 3;
+      li{
+        a{
+          display: block;
+          padding: 1.2rem 1rem;
+          margin-bottom: 0.5rem;
+          background-color: #eee;
+          font-family: source sans pro,Helvetica,Arial,sans-serif;
+          border-radius: 2px;
+          font-size: 1rem;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: #aaa;
+          transition: all 100ms ease-out;
+        }
+        .active{
+          background-color: $primaryColor;
+          color: white;
+        }
+      }
+    }
+    .services-page__text{
+      padding: 1rem 0 ;
+      color: #aaa;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+      p{
+        margin-bottom: 1rem;
+      }
+    }
+    .services-page__images{
+      img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -1551,6 +1597,55 @@ button {
             color: #aaa;
             font-size: 14px;
           }
+        }
+      }
+    }
+  }
+  .services-page {
+    padding: 3rem 0;
+    .container {
+      display: grid;
+      grid-template-columns: 25% 42% 33%;
+      gap: 1rem;
+      .services-page__sidebar {
+        order: 1;
+        padding: 1rem 0 ;
+        li{
+          a{
+            display: block;
+            padding: 1.2rem 1rem;
+            margin-bottom: 0.5rem;
+            background-color: #eee;
+            font-family: source sans pro,Helvetica,Arial,sans-serif;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #aaa;
+            transition: all 100ms ease-out;
+          }
+          .active{
+            background-color: $primaryColor;
+            color: white;
+          }
+        }
+      }
+      .services-page__text{
+        order: 2;
+        padding: 1rem  ;
+        color: #aaa;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .services-page__images{
+        order: 3;
+        padding: 1rem ;
+        img{
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+          margin-bottom: 1rem;
         }
       }
     }

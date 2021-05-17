@@ -1258,6 +1258,63 @@ button:focus, button:active {
   font-size: 14px;
 }
 
+.services-page {
+  padding: 3rem 0;
+}
+
+.services-page .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.services-page .container .services-page__sidebar {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.services-page .container .services-page__sidebar li a {
+  display: block;
+  padding: 1.2rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #eee;
+  font-family: source sans pro,Helvetica,Arial,sans-serif;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #aaa;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.services-page .container .services-page__sidebar li .active {
+  background-color: #4ab9cf;
+  color: white;
+}
+
+.services-page .container .services-page__text {
+  padding: 1rem 0;
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-page .container .services-page__text p {
+  margin-bottom: 1rem;
+}
+
+.services-page .container .services-page__images img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
+}
+
 .footer {
   background-color: #1f425d;
   padding: 3rem 0;
@@ -1904,6 +1961,63 @@ button:focus, button:active {
     margin-bottom: 1.5rem;
     color: #aaa;
     font-size: 14px;
+  }
+  .services-page {
+    padding: 3rem 0;
+  }
+  .services-page .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 42% 33%;
+        grid-template-columns: 25% 42% 33%;
+    gap: 1rem;
+  }
+  .services-page .container .services-page__sidebar {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 1rem 0;
+  }
+  .services-page .container .services-page__sidebar li a {
+    display: block;
+    padding: 1.2rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #eee;
+    font-family: source sans pro,Helvetica,Arial,sans-serif;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #aaa;
+    -webkit-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+  }
+  .services-page .container .services-page__sidebar li .active {
+    background-color: #4ab9cf;
+    color: white;
+  }
+  .services-page .container .services-page__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 1rem;
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .services-page .container .services-page__images {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    padding: 1rem;
+  }
+  .services-page .container .services-page__images img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 1rem;
   }
   .footer {
     background-color: #1f425d;
