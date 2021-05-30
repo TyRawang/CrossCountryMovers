@@ -2428,8 +2428,8 @@ button:focus, button:active {
     padding: 4rem 1rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 75% 25%;
-        grid-template-columns: 75% 25%;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
     gap: 2rem;
   }
   .faq-page .container .faq-side-nav {
